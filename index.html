@@ -1,0 +1,149 @@
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<script>
+		(function (doc, win) {
+			var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function () {
+						window.clientWidth = docEl.clientWidth;
+						if (!window.clientWidth) return;
+						docEl.style.fontSize = 20 * (window.clientWidth / 640) + 'px';
+						window.base = 20 * (window.clientWidth / 640);
+					};
+			recalc();
+			// Abort if browser does not support addEventListener
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+    <link rel="stylesheet" type="text/css" href="./css/core.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body>
+	<div id="container">
+		<!--music start-->
+		<div id="music" class="acitive"></div>
+		<!--music end-->
+
+		<div id="tips"></div>
+
+		<!--loading_page begin-->
+		<section class="page animation" id="page0">
+			<div class="inner">
+				<div class="logo"></div>
+				<div class="line">
+					<div class="in-line"></div>
+				</div>
+			</div>
+		</section>
+		<!--loading_page end-->
+
+		<!--page1_start-->
+		<section class="page animation" id="page1">
+			<div class="inner">
+				<div class="logo"></div>
+				<div class="common_bg bg1">
+					<div class="human_cloud">
+						<div class="human"></div>
+						<div class="cloud"></div>
+
+					</div>
+				</div>
+				<div class="common_bg bg2">
+					<div class="title"></div>
+					<div class="text"></div>
+					<div class="human_cloud">
+						<div class="human"></div>
+						<div class="cloud"></div>
+					</div>
+				</div>
+				<div class="logo"></div>
+
+			</div>
+		</section>
+		<section class="page" id="page2">
+			<div class="inner">
+				<div class="common_bg">
+					<div class="text">
+					</div>
+					<div class="title"></div>
+					<div class="man"></div>
+				</div>
+			</div>
+		</section>
+		<section class="page" id="page3">
+			<div class="inner">
+				<div class="common_bg">
+					<div class="text"></div>
+					<div class="title"></div>
+				</div>
+			</div>
+		</section>
+		<section class="page" id="page4">
+			<div class="inner">
+				<div class="common_bg">
+					<div class="text"></div>
+					<div class="car"></div>
+					<div class="title"></div>
+				</div>
+			</div>
+		</section>
+		<section class="page" id="page5">
+			<div class="inner">
+				<div class="common_bg">
+					<div class="text"></div>
+					<div class="phone">
+						<div class="number"></div>
+					</div>
+					<div class="finger"></div>
+					<div class="title"></div>
+					<div class="intro"></div>
+				</div>
+			</div>
+		</section>
+		<section class="page" id="page6">
+			<div class="inner">
+				<div class="common_bg">
+					<div class="text"></div>
+					<div class="number"></div>
+					<div class="man"></div>
+					<div class="title"></div>
+				</div>
+			</div>
+		</section>
+		<section class="page" id="page7">
+			<div class="inner">
+				<div class="common_bg">
+					<div class="title"></div>
+					<div class="man">
+						<div class="mouse"></div>
+						<div class="moustache"></div>
+					</div>
+					<div class="intro"></div>
+				</div>
+			</div>
+		</section>
+		<section class="page" id="page8">
+			<div class="inner">
+				<div class="common_bg">
+					<div class="logo"></div>
+					<div class="board">
+						<div class="text"></div>
+					</div>
+					<div class="button"></div>
+					<div class="intro"></div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body> 
+</html>
